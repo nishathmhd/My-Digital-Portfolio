@@ -1,16 +1,16 @@
 # Dennis Ivy Digital Resume
 
-A digital resume website built based on the content from my personal REAL [resume](./assets/resume.pdf) 
+A digital resume website built based on the content from my personal REAL [resume](./assets/Mohamed_Nishath.pdf) 
 
 View live demo here using github pages: [Live Demo](https://divanov11.github.io/Digital-Resume/)
 
 ## Dark Mode Preview
 
-<img src="assets\images\dark mode preview.PNG">
+<img width="661" alt="NishathPorfolioDark" src="https://github.com/nishathmhd/My-Digital-Portfolio/assets/117710744/3c253515-ffd5-42e1-8d71-a1aa1de9f329">
 
 ## Light Mode Preview
 
-<img src="assets\images\light mode preview.PNG">
+<img width="630" alt="NishathPorfolioLight" src="https://github.com/nishathmhd/My-Digital-Portfolio/assets/117710744/ebcec997-b506-44a9-91f9-420dd7e2ccab">
 
 ## Switching between color themes
 
