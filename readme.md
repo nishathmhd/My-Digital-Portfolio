@@ -2,7 +2,7 @@
 
 A digital resume website built based on the content from my personal REAL [resume](./assets/Mohamed_Nishath.pdf) 
 
-View live demo here using github pages: [Live Demo](https://divanov11.github.io/Digital-Resume/)
+View live demo here using github pages: [Live Demo](https://nishathmhd.github.io/My-Digital-Portfolio/)
 
 ## Dark Mode Preview
 
