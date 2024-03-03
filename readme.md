@@ -14,12 +14,14 @@ View live demo here using github pages: [Live Demo](https://divanov11.github.io/
 
 ## Switching between color themes
 
-This website has no auto toggle theme switcher, therefor to change themes you must manual go into `/styles/main.css` and the css variables to use either theme. Default is dark, so do the following here:
+This project includes a dark mode feature for enhanced readability and user experience. By clicking on the toggle button located at the top right corner of the page, users can easily switch between dark and light color themes to suit their preferences. Enjoy seamless navigation and readability with our customizable color themes!
 
-```css
---mainTextColor:var(--mainTextColor-light); 
---secondaryTextColor:(--secondaryTextColor-light);
---mainLinkColor:var(--mainLinkColor-light);
---mainBorderColor:var(--mainBorderColor-light);
---mainBgColor:var(--mainBgColor-light);
+```js
+// Dark mode toggle script
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
 ```
