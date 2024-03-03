@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DataViz Showcase</title>
+        <meta name="description" content="Explore interactive Tableau dashboards showcasing London bike share data and British Airways reviews.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>DataViz Showcase: London Bike Share & British Airways Review</h1>
+
+            <ul>
+                <li><a href="https://public.tableau.com/views/LondonBikeRides_17081963113610/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">London Bike Share</a></li>
+                <li><a href="https://public.tableau.com/views/BritishAirwaysReviews_17082699336600/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">British Airways Reviews</a></li>
+                <li><a href="https://github.com/nishathmhd/Tableau-Project.git" target="_blank">Source code</a></li>
+            </ul>
+            
+            <p>This project features two interactive Tableau dashboards: <strong>Project-London Bike Share</strong> and <strong>Project-British Airways Review</strong>.</p>
+
+            <p>The <strong>London Bike Share</strong> dashboard provides insights into bike-sharing usage patterns, including trip duration, start and end stations, and user demographics.</p>
+            
+            <p>The <strong>British Airways Review</strong> dashboard analyzes customer reviews and sentiment towards British Airways, highlighting key themes and sentiment trends.</p>
+
+            <p>Explore these interactive dashboards to gain valuable insights and visualizations!</p>
+
+            <p>For access to the Tableau dashboards and project source code, visit the GitHub repository.</p>
+        </div>
+
+        <!-- Dark mode toggle script -->
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check if dark mode preference is stored
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            // Apply stored mode preference
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Update localStorage with the new mode preference
+                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+            });
+        </script>
+    </body>
+</html>

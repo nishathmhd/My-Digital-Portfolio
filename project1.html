@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ML Model Trainer Pro</title>
+    <meta name="description" content="An interactive web application for machine learning model training and exploration.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div id="container--main">
+        <!-- Dark mode toggle -->
+        <div id="dark-mode-toggle"><i class="fa-solid fa-toggle-on"></i></div>
+
+        <a href="index.html">&#x2190; Go Back</a>
+        <h1>ML Model Trainer Pro</h1>
+
+        <ul>
+            <li><a href="#">Live Demo</a></li>
+            <li><a href="https://github.com/nishathmhd/model-trainer-app.git" target="_blank">Source code</a></li>
+        </ul>
+        <p>ML Model Trainer Pro is an interactive web application built using Streamlit, a Python library for creating machine learning and data science projects. It allows users to upload their dataset, select machine learning algorithms, fine-tune hyperparameters, train the model, and evaluate its performance.</p>
+        
+        <p>The app features include:</p>
+
+        <ul>
+            <li>Upload Data</li>
+            <li>Model Selection</li>
+            <li>Hyperparameter Tuning</li>
+            <li>Model Training</li>
+            <li>Cross-Validation</li>
+            <li>Data Visualization</li>
+            <li>Trained Model Download</li>
+        </ul>
+
+        <p>Contributions to this project are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull request on GitHub.</p>
+    </div>
+
+    <!-- Dark mode toggle script -->
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        // Check if dark mode preference is stored
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+        // Apply stored mode preference
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            // Update localStorage with the new mode preference
+            localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        });
+    </script>
+</body>
+</html>

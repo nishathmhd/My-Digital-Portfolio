@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cloud-Native Monitoring App</title>
+        <meta name="description" content="Explore the deployment of a cloud-native monitoring application on Kubernetes, integrating key DevOps tools for enhanced observability, scalability, and reliability.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>Cloud-Native Monitoring Application Deployment on Kubernetes</h1>
+
+            <ul>
+                <li><a href="#">Live Demo</a></li>
+                <li><a href="https://github.com/nishathmhd/Kubernetes-Project-DevOps.git" target="_blank">Source code</a></li>
+            </ul>
+            
+            <p>This project demonstrates the successful deployment of a cloud-native monitoring application on Kubernetes. It integrates key DevOps tools such as AWS, Python, Docker, and Kubernetes to enhance observability, scalability, and reliability of applications in a real-time environment.</p>
+
+            <p>Explore the deployment architecture and configuration, leveraging Kubernetes for container orchestration and management. The application aims to provide comprehensive monitoring and management capabilities for cloud-native environments.</p>
+
+            <p>For access to the live demo and project source code, visit the GitHub repository.</p>
+        </div>
+        
+        <!-- Dark mode toggle script -->
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check if dark mode preference is stored
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            // Apply stored mode preference
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Update localStorage with the new mode preference
+                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+            });
+        </script>
+    </body>
+</html>

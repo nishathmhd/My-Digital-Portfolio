@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PowerBI Dashboard</title>
+        <meta name="description" content="Explore interactive PowerBI dashboards for car supply chain management, including order, sales, and customer review pages.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>PowerBI Dashboard: Car Supply Chain Management</h1>
+
+            <ul>
+                <li><a href="./assets/SupplychainMangement.pdf" target="_blank">Live Demo</a>
+                <li><a href="https://github.com/nishathmhd/PowerBi-Project.git" target="_blank">Source code</a></li>
+            </ul>
+            
+            <p>This project showcases interactive PowerBI dashboards for car supply chain management, leveraging a dataset obtained from Kaggle. The dataset underwent exploratory data analysis (EDA), cleaning, and preprocessing using Python before being connected to MySQL for further data manipulation and analysis.</p>
+
+            <p>The project features three main dashboards:</p>
+            <ul>
+                <li>Order Page</li>
+                <li>Sales Page</li>
+                <li>Customer Review Page</li>
+            </ul>
+
+            <p>Explore these interactive dashboards to gain insights into the car supply chain management process, including order details, sales performance, and customer feedback.</p>
+
+            <p>For access to the PowerBI dashboards and project source code, visit the GitHub repository.</p>
+        </div>
+
+        <!-- Dark mode toggle script -->
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check if dark mode preference is stored
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            // Apply stored mode preference
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Update localStorage with the new mode preference
+                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>s3staticwebsite</title>
+        <meta name="description" content="Explore the implementation of a DevOps project leveraging Terraform and AWS Cloud to automate the setup of a static website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>Terraform AWS Infrastructure Automation for Static Website Deployment</h1>
+
+            <ul>
+                <li><a href="#">Live Demo</a></li>
+                <li><a href="https://github.com/nishathmhd/Terrafrom-project-DevOps.git" target="_blank">Source code</a></li>
+            </ul>
+            
+            <p>This project demonstrates the implementation of a DevOps project leveraging Terraform and AWS Cloud to automate the setup of a static website. The project aims to streamline the deployment process, enhance scalability, and ensure efficient infrastructure management.</p>
+
+            <p>Explore the infrastructure configuration and automation using Terraform, enabling the deployment of a static website on AWS Cloud with ease. The project highlights the benefits of infrastructure as code (IaC) for maintaining consistent and reproducible deployments.</p>
+
+            <p>For access to the live demo and project source code, visit the GitHub repository.</p>
+        </div>
+
+        <!-- Dark mode toggle script -->
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check if dark mode preference is stored
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            // Apply stored mode preference
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Update localStorage with the new mode preference
+                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+            });
+        </script>
+    </body>
+</html>

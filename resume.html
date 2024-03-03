@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resume</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="container--main">
+            <a href="index.html">&#x2190; Go Back</a>
+            <h1>Choose The Resume</h1>
+
+            <ul>
+                <li><a href="./assets/Resume.Nishath.pdf" target="_blank">DevOps</a></li>
+                <li><a href="./assets/Mohamed_Nishath.pdf" target="_blank">Data Science</a></li>
+            </ul>
+        </div>
+
+        <!-- Dark mode toggle script -->
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            const body = document.body;
+
+            // Check if dark mode preference is stored
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+            // Apply stored mode preference
+            if (isDarkMode) {
+                body.classList.add('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                // Update localStorage with the new mode preference
+                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+            });
+        </script>
+    </body>
+</html>
