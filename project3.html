@@ -14,8 +14,7 @@
             <h1>DataViz Showcase: London Bike Share & British Airways Review</h1>
 
             <ul>
-                <li><a href="https://public.tableau.com/views/LondonBikeRides_17081963113610/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">London Bike Share</a></li>
-                <li><a href="https://public.tableau.com/views/BritishAirwaysReviews_17082699336600/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">British Airways Reviews</a></li>
+                <li><a href="https://public.tableau.com/views/LondonBikeRides_17081963113610/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link" target="_blank">Live Demo</a></li>
                 <li><a href="https://github.com/nishathmhd/Tableau-Project.git" target="_blank">Source code</a></li>
             </ul>
             
@@ -29,25 +28,18 @@
 
             <p>For access to the Tableau dashboards and project source code, visit the GitHub repository.</p>
         </div>
-
-        <!-- Dark mode toggle script -->
-        <script>
-            const darkModeToggle = document.getElementById('dark-mode-toggle');
-            const body = document.body;
-
-            // Check if dark mode preference is stored
-            const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-            // Apply stored mode preference
-            if (isDarkMode) {
-                body.classList.add('dark-mode');
+         <!-- Dark mode toggle script -->
+         <script>
+            // Check for dark mode preference when the page loads
+            window.onload = function() {
+                var darkModeEnabled = localStorage.getItem("darkMode") === "enabled";
+                if (darkModeEnabled) {
+                    document.body.classList.add("dark-mode");
+                    // Assuming you have an icon for dark mode in project1.html as well
+                    var icon = document.getElementById("dark-mode-toggle");
+                    icon.innerHTML = '<i class="fa-solid fa-toggle-on"></i>';
+                }
             }
-
-            darkModeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                // Update localStorage with the new mode preference
-                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
-            });
         </script>
     </body>
 </html>

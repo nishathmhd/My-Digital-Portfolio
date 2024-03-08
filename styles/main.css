@@ -33,6 +33,11 @@ body.dark-mode {
 }
 
 
+#icon{
+    width: 25px;
+    cursor: pointer;
+}
+
 /* Body Styling */
 *{
     font-family: 'Josefin Sans', sans-serif;
@@ -97,7 +102,7 @@ li{
     border-radius: 50%;
 }
 
-#email{
+#email a:hover{
     color: var(--mainTextColor);
 }
 
@@ -116,11 +121,12 @@ li{
     transition: 0.3s;
 }
 
-#socials--list a:hover{
+#socials--list a:hover i {
     font-weight: 100;
     color: var(--mainLinkColor);
     font-size: 1.2em;
 }
+
 
 /* Qualifications List Styling */
 #qualifications--list{
@@ -200,3 +206,15 @@ li{
     }
 }
 
+
+/*------- custom scrollbar -------- */
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #c7ced0;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#0da2b8, #0da2b8);
+    border-radius: 10px;
+}

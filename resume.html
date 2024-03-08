@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Resume</title>
+        <meta name="description" content="Explore the implementation of a DevOps project leveraging Terraform and AWS Cloud to automate the setup of a static website.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
     </head>
@@ -17,25 +18,18 @@
                 <li><a href="./assets/Mohamed_Nishath.pdf" target="_blank">Data Science</a></li>
             </ul>
         </div>
-
         <!-- Dark mode toggle script -->
         <script>
-            const darkModeToggle = document.getElementById('dark-mode-toggle');
-            const body = document.body;
-
-            // Check if dark mode preference is stored
-            const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-            // Apply stored mode preference
-            if (isDarkMode) {
-                body.classList.add('dark-mode');
+            // Check for dark mode preference when the page loads
+            window.onload = function() {
+                var darkModeEnabled = localStorage.getItem("darkMode") === "enabled";
+                if (darkModeEnabled) {
+                    document.body.classList.add("dark-mode");
+                    // Assuming you have an icon for dark mode in project1.html as well
+                    var icon = document.getElementById("dark-mode-toggle");
+                    icon.innerHTML = '<i class="fa-solid fa-toggle-on"></i>';
+                }
             }
-
-            darkModeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                // Update localStorage with the new mode preference
-                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
-            });
-        </script>
+        </script>        
     </body>
 </html>

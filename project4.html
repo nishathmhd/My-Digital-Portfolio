@@ -14,7 +14,7 @@
             <h1>PowerBI Dashboard: Car Supply Chain Management</h1>
 
             <ul>
-                <li><a href="./assets/SupplychainMangement.pdf" target="_blank">Live Demo</a>
+                <li><a href="#">Live Demo</a></li>
                 <li><a href="https://github.com/nishathmhd/PowerBi-Project.git" target="_blank">Source code</a></li>
             </ul>
             
@@ -31,25 +31,18 @@
 
             <p>For access to the PowerBI dashboards and project source code, visit the GitHub repository.</p>
         </div>
-
-        <!-- Dark mode toggle script -->
-        <script>
-            const darkModeToggle = document.getElementById('dark-mode-toggle');
-            const body = document.body;
-
-            // Check if dark mode preference is stored
-            const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-            // Apply stored mode preference
-            if (isDarkMode) {
-                body.classList.add('dark-mode');
+         <!-- Dark mode toggle script -->
+         <script>
+            // Check for dark mode preference when the page loads
+            window.onload = function() {
+                var darkModeEnabled = localStorage.getItem("darkMode") === "enabled";
+                if (darkModeEnabled) {
+                    document.body.classList.add("dark-mode");
+                    // Assuming you have an icon for dark mode in project1.html as well
+                    var icon = document.getElementById("dark-mode-toggle");
+                    icon.innerHTML = '<i class="fa-solid fa-toggle-on"></i>';
+                }
             }
-
-            darkModeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                // Update localStorage with the new mode preference
-                localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
-            });
-        </script>
+        </script>       
     </body>
 </html>
